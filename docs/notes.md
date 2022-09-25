@@ -70,6 +70,30 @@ ports is from 49,152 to 65,535.
 * The intention is to scan a systems port or ports in order to determine which ports
 are open and therefore are vulnerable to attack.
 
+### Random Notes:
+* IP scanners:
+  * scan networks to detect the active devices on them
+* Port scanners:
+  * Are geared to towards scanning individual devices in a network to discover open ports.
+* Think of ports as the windows and doors through which you can enter a house, and the ip
+address is the address to the house.
+* If you did not specify the IP range which you want to scan, the scanner would use the
+default setting, which is the local subnet, so all of the IPs of the local subnet would
+be scanned. All the scanner does is send pings to each of the IP addresses in the range
+which you are interested in to get details about the IP.
+* Some of the information IP scanners would try to find out includes:
+  * if an IP address is active
+  * the device it is assigned to
+  * the device-related information such:
+    * as Operating System
+    * vendor
+    * MAC address
+      * description of the device
+      * If the scanner has support for scanning ports for each of the IPs/devices:
+        * Individual ports to find out the status:
+          * open
+          * close
+          * filtered
 ### Vocab:
 * request packet
 *
